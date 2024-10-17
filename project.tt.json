@@ -1,13 +1,11 @@
+
 {
   "miniprogramRoot": "./",
-  "projectname": "taroFQ",
-  "description": "fq",
-  "appid": "touristappid",
+  "projectname": "taroApp",
+  "appid": "testAppId",
   "setting": {
-    "urlCheck": true,
     "es6": false,
-    "postcss": false,
     "minified": false
-  },
-  "compileType": "miniprogram"
+  }
 }
+  

@@ -27,7 +27,7 @@ const data = [
       },
       {
         label: 'B、雨2',
-        value: '雨'
+        value: 'B'
       },
     ]
   }
