@@ -1,37 +1,7 @@
 import {View, Text} from "@tarojs/components";
 import {AtButton, AtRadio} from "taro-ui";
 import {useEffect, useState} from "react";
-
-const data = [
-  {
-    fq: "今天天气怎么样？",
-    ask: "A",
-    options: [
-      {
-        label: 'A、晴',
-        value: 'A'
-      },
-      {
-        label: 'B、雨',
-        value: '雨'
-      },
-    ]
-  },
-  {
-    fq: "今天天气怎么样2？",
-    ask: "B",
-    options: [
-      {
-        label: 'A、晴2',
-        value: 'A'
-      },
-      {
-        label: 'B、雨2',
-        value: 'B'
-      },
-    ]
-  }
-]
+import data from './data';
 export default function Index() {
   const [ask, setAsk] = useState('');
   const [fq, setFq] = useState<any>({});
@@ -60,7 +30,7 @@ export default function Index() {
   }, [])
   return (
     <View style={{fontSize: '0.8rem'}}>
-      <View>{fq.fq}</View>
+      <View style={{margin: '20px 0'}}>{fq.fq}</View>
       <AtRadio
         options={fq.options}
         value={ask}
