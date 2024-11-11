@@ -1,9 +1,11 @@
 import {View} from "@tarojs/components";
 import data from './data';
-export default function Index() {
+import React from "react";
+export default function QA() {
 
   return (
     <View style={{fontSize: '0.8rem', padding: '10px'}}>
+
       {
         data.map((i:any, idx:number)=>{
           return (
@@ -14,7 +16,6 @@ export default function Index() {
           )
         })
       }
-
 
     </View>
   )

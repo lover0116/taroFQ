@@ -2,7 +2,8 @@ import {View, Text} from "@tarojs/components";
 import {AtButton, AtRadio} from "taro-ui";
 import {useEffect, useState} from "react";
 import data from './data';
-export default function Index() {
+import React from "react";
+export default function Select() {
   const [ask, setAsk] = useState('');
   const [fq, setFq] = useState<any>({});
   const [sureAsk, setSureAsk] = useState('');
