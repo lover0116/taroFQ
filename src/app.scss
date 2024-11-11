@@ -1,0 +1,7 @@
+.x-p10{ padding: 10px;}
+.x-link{
+  color: blue;
+  &:hover{
+    color: red;
+  }
+}
